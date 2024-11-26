@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Estudiantes</title>
+</head>
+<body>
+    <h1>Estudiantes</h1>
+    <ul>
+        {% for estudiante in estudiantes %}
+            <li>{{ estudiante.nombre }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Direccion</h1>
+    <ul>
+        {% for direccion in direcciones %}
+            <li>{{ direccion.nombre }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Cursos</h1>
+    <ul>
+        {% for curso in cursos %}
+            <li>{{ curso.nombre }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Profesor</h1>
+    <ul>
+        {% for profesor in profesores %}
+            <li>{{ profesor.titulo }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
